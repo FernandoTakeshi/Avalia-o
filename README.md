@@ -1,2 +1,2 @@
-# Avalia-o
+# Avaliação
 Avaliação. Faça um merge e um rebase no repositório git_test.
