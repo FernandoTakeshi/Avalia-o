@@ -1,3 +1,75 @@
-Fernando Marques Ferreira
-20
-Unir
+Avaliação do módulo I
+
+Avaliação: Faça um merge e um rebase no repositório git_test.
+
+vou fazer no repositório C:Avaliação/git> para me organizar.
+
+			Iniciando.
+-----------------------------------------------------------------------------------
+
+Nome: Fernando Marques Ferreira.
+
+------------------------------------------------------------------------------------------
+
+Vou faze o merge agora.
+
+----------------------------------------------------------------------------------------
+
+Fiz o comando $ git branch merge -> para cria o merge.
+
+Fiz o comando $ git branch -> para verirfica.
+
+Fiz o comando $ git merge merge -> para utiliza o merge.
+
+Fiz o comando $ git checkout merge -> para checa o merge.
+
+Fiz o comando $ git branch -> para verifica.
+
+fiz o comando $ git log -> para verifica tudo que ja foi feito.
+
+Fiz o comando $ git log --graph -> para mais informação.
+
+fiz o comando $ git show  "com a informação do commit no graph" -> para mais detalhe de informação do arquivo.
+
+----------------------------------------------------------------------------------------------
+
+Vou faze o rebase logo abaixo.
+
+---------------------------------------------------------------------------------------------------
+
+faze o comando $git branch rebase -> para cria o rebase.
+
+fiz o comando $ git rebase rebase -> para utiliza o rebase.
+
+fiz o comando $ git checkout rebase -> para checa o rebase.
+
+fiz o comando $ git branch -> para verifica.
+
+fiz o comando $ git log -> para verifica tudo que ja foi feito.
+
+Fiz  o comando $ git log --graph - > para mais informação.
+
+fiz o comando $ git show "com a informação do commit no graph" -> para mais detalhe de informação do arquivo.
+
+-----------------------------------------------------------------------------------------------------
+
+Vou utiliza o master.
+
+------------------------------------------------------------------------------------------------------
+
+Fiz o comando $ git branch -> para verifica.
+
+Fiz o comando $ git checkout master -> para checa o master.
+
+Fiz o comando $ git branch -> para verifica.
+
+Fiz o comando $ git log -> para verifica tudo que ja foi feito.
+
+Fiz o comando $ git log --graph -> para mais informação.
+
+Fiz o comando $ fit show "com a informação do commit no graph" -> para mais detalhe de informação do arquivo.
+
+-------------------------------------------------------------------------------------------------------------------
+
+finalizei o git CMD.
+

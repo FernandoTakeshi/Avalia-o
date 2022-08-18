@@ -1,0 +1,299 @@
+
+C:\Avaliação\git>git config --global user.name "Fernando Marques Ferreira"
+
+C:\Avaliação\git>git config --global user.email "fernandotakeshi47@gmail.com"
+
+C:\Avaliação\git>git init
+Initialized empty Git repository in C:/Avaliação/git/.git/
+
+C:\Avaliação\git>git add olaMundo.txt
+
+C:\Avaliação\git>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   olaMundo.txt
+
+
+C:\Avaliação\git>git commit -m "Adicionei o Arquivo com o meu nome"
+[master (root-commit) 8437914] Adicionei o Arquivo com o meu nome
+ 1 file changed, 57 insertions(+)
+ create mode 100644 olaMundo.txt
+
+C:\Avaliação\git>git add olaMundo.txt
+
+C:\Avaliação\git>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   olaMundo.txt
+
+
+C:\Avaliação\git>git commit -am "Vou fazer o merge"
+[master 41a1ead] Vou fazer o merge
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Avaliação\git>git branch merge
+
+C:\Avaliação\git>git branch
+* master
+  merge
+
+C:\Avaliação\git>git merge merge
+Already up to date.
+
+C:\Avaliação\git>git checkout merge
+Switched to branch 'merge'
+
+C:\Avaliação\git>git branch
+  master
+* merge
+
+C:\Avaliação\git>git log
+commit 41a1ead7e4682f6a9cb358c1030883e0069a25c0 (HEAD -> merge, master)
+Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+Date:   Thu Aug 18 12:44:02 2022 -0300
+
+    Vou fazer o merge
+
+commit 8437914d8a442ad0de9fdeee4a778bf3db33bedb
+Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+Date:   Thu Aug 18 12:42:40 2022 -0300
+
+    Adicionei o Arquivo com o meu nome
+
+C:\Avaliação\git>git log --graph
+* commit 41a1ead7e4682f6a9cb358c1030883e0069a25c0 (HEAD -> merge, master)
+| Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+| Date:   Thu Aug 18 12:44:02 2022 -0300
+|
+|     Vou fazer o merge
+|
+* commit 8437914d8a442ad0de9fdeee4a778bf3db33bedb
+  Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+  Date:   Thu Aug 18 12:42:40 2022 -0300
+
+      Adicionei o Arquivo com o meu nome
+
+C:\Avaliação\git>git show  41a1ead7e4682f6a9cb358c1030883e0069a25c
+commit 41a1ead7e4682f6a9cb358c1030883e0069a25c0 (HEAD -> merge, master)
+Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+Date:   Thu Aug 18 12:44:02 2022 -0300
+
+    Vou fazer o merge
+
+diff --git a/olaMundo.txt b/olaMundo.txt
+index 77e7ae0..4201537 100644
+--- a/olaMundo.txt
++++ b/olaMundo.txt
+@@ -11,7 +11,7 @@ Nome: Fernando Marques Ferreira.
+
+ ------------------------------------------------------------------------------------------
+
+-
++Vou faze o merge agora.
+
+ ----------------------------------------------------------------------------------------
+
+
+C:\Avaliação\git>git add olaMundo.txt
+
+C:\Avaliação\git>git status
+On branch merge
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   olaMundo.txt
+
+
+C:\Avaliação\git>git commit -am "Vou faze o rebase"
+[merge 976cb9c] Vou faze o rebase
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+C:\Avaliação\git>git branch rebase
+
+C:\Avaliação\git>git rebase rebase
+Current branch merge is up to date.
+
+C:\Avaliação\git>git checkout rebase
+Switched to branch 'rebase'
+
+C:\Avaliação\git>git branch
+  master
+  merge
+* rebase
+
+C:\Avaliação\git>git log
+commit 976cb9ce27371692845ee4d5ca621455d3807f45 (HEAD -> rebase, merge)
+Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+Date:   Thu Aug 18 12:48:18 2022 -0300
+
+    Vou faze o rebase
+
+commit 41a1ead7e4682f6a9cb358c1030883e0069a25c0 (master)
+Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+Date:   Thu Aug 18 12:44:02 2022 -0300
+
+    Vou fazer o merge
+
+commit 8437914d8a442ad0de9fdeee4a778bf3db33bedb
+Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+Date:   Thu Aug 18 12:42:40 2022 -0300
+
+    Adicionei o Arquivo com o meu nome
+
+C:\Avaliação\git>git log --graph
+* commit 976cb9ce27371692845ee4d5ca621455d3807f45 (HEAD -> rebase, merge)
+| Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+| Date:   Thu Aug 18 12:48:18 2022 -0300
+|
+|     Vou faze o rebase
+|
+* commit 41a1ead7e4682f6a9cb358c1030883e0069a25c0 (master)
+| Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+| Date:   Thu Aug 18 12:44:02 2022 -0300
+|
+|     Vou fazer o merge
+|
+* commit 8437914d8a442ad0de9fdeee4a778bf3db33bedb
+  Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+  Date:   Thu Aug 18 12:42:40 2022 -0300
+
+      Adicionei o Arquivo com o meu nome
+
+
+C:\Avaliação\git>git show 976cb9ce27371692845ee4d5ca621455d3807f45
+commit 976cb9ce27371692845ee4d5ca621455d3807f45 (HEAD -> rebase, merge)
+Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+Date:   Thu Aug 18 12:48:18 2022 -0300
+
+    Vou faze o rebase
+
+diff --git a/olaMundo.txt b/olaMundo.txt
+index 4201537..886d2e5 100644
+--- a/olaMundo.txt
++++ b/olaMundo.txt
+@@ -31,9 +31,9 @@ Fiz o comando $ git log --graph -> para mais informação.
+
+ fiz o comando $ git show -> "com a informação do commit no graph" -> para mais detalhe do arquivo.
+
+---------------------------------------------------------------------------------------------------
++----------------------------------------------------------------------------------------------
+
+-Faze o rebase logo abaixo.
++Vou faze o rebase logo abaixo.
+
+ ---------------------------------------------------------------------------------------------------
+
+
+C:\Avaliação\git>git add olaMundo.txt
+
+C:\Avaliação\git>git status
+On branch rebase
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   olaMundo.txt
+
+
+C:\Avaliação\git>git commit -am "Vou utiliza o master
+[rebase cf98388] Vou utiliza o master
+ 1 file changed, 22 insertions(+), 2 deletions(-)
+
+
+C:\Avaliação\git>git branch
+  master
+  merge
+* rebase
+
+C:\Avaliação\git>git checkout master
+Switched to branch 'master'
+
+C:\Avaliação\git>git branch
+* master
+  merge
+  rebase
+
+C:\Avaliação\git>git log
+commit 41a1ead7e4682f6a9cb358c1030883e0069a25c0 (HEAD -> master)
+Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+Date:   Thu Aug 18 12:44:02 2022 -0300
+
+    Vou fazer o merge
+
+commit 8437914d8a442ad0de9fdeee4a778bf3db33bedb
+Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+Date:   Thu Aug 18 12:42:40 2022 -0300
+
+    Adicionei o Arquivo com o meu nome
+
+C:\Avaliação\git>git log --graph
+* commit 41a1ead7e4682f6a9cb358c1030883e0069a25c0 (HEAD -> master)
+| Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+| Date:   Thu Aug 18 12:44:02 2022 -0300
+|
+|     Vou fazer o merge
+|
+* commit 8437914d8a442ad0de9fdeee4a778bf3db33bedb
+  Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+  Date:   Thu Aug 18 12:42:40 2022 -0300
+
+      Adicionei o Arquivo com o meu nome
+
+C:\Avaliação\git>git show 41a1ead7e4682f6a9cb358c1030883e0069a25c0
+commit 41a1ead7e4682f6a9cb358c1030883e0069a25c0 (HEAD -> master)
+Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+Date:   Thu Aug 18 12:44:02 2022 -0300
+
+    Vou fazer o merge
+
+diff --git a/olaMundo.txt b/olaMundo.txt
+index 77e7ae0..4201537 100644
+--- a/olaMundo.txt
++++ b/olaMundo.txt
+@@ -11,7 +11,7 @@ Nome: Fernando Marques Ferreira.
+
+ ------------------------------------------------------------------------------------------
+
+-
++Vou faze o merge agora.
+
+ ----------------------------------------------------------------------------------------
+
+
+C:\Avaliação\git>git checkout rebase
+Switched to branch 'rebase'
+
+C:\Avaliação\git>git branch
+  master
+  merge
+* rebase
+
+C:\Avaliação\git>git log
+
+commit cf98388619174746f758989894051a97439b50aa
+Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+Date:   Thu Aug 18 12:59:23 2022 -0300
+
+    Vou utiliza o master
+
+commit 976cb9ce27371692845ee4d5ca621455d3807f45 (merge)
+Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+Date:   Thu Aug 18 12:48:18 2022 -0300
+
+    Vou faze o rebase
+
+commit 41a1ead7e4682f6a9cb358c1030883e0069a25c0 (master)
+Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+Date:   Thu Aug 18 12:44:02 2022 -0300
+
+    Vou fazer o merge
+
+commit 8437914d8a442ad0de9fdeee4a778bf3db33bedb
+Author: Fernando Marques Ferreira <fernandotakeshi47@gmail.com>
+Date:   Thu Aug 18 12:42:40 2022 -0300
+
+    Adicionei o Arquivo com o meu nome
+
+C:\Avaliação\git>exit
